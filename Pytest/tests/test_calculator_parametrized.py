@@ -12,7 +12,7 @@ def test_add_2():
     assert calculator.add_wrong(0,5) == 5
     assert calculator.add_wrong(-2,9) == 7
     assert calculator.add_wrong(0,0) == 0
-#test add
+
 @pytest.mark.parametrize(
     "a, b, expected",
     [
@@ -24,7 +24,7 @@ def test_add_2():
 )
 def test_add_parametrized(a, b, expected):
     assert calculator.add(a, b) == expected
-#test add_wrong
+
 @pytest.mark.parametrize(
     "a, b, expected",
     [
@@ -36,7 +36,7 @@ def test_add_parametrized(a, b, expected):
 )
 def test_add_wrong_parametrized(a, b, expected):
     assert calculator.add_wrong(a, b) == expected
-#test subtract
+
 @pytest.mark.parametrize(
     "a, b, expected",
     [
@@ -48,7 +48,7 @@ def test_add_wrong_parametrized(a, b, expected):
 )
 def test_subtract_parametrized(a, b, expected):
     assert calculator.subtract(a, b) == expected
-#test multiply
+
 @pytest.mark.parametrize(
     "a, b, expected",
     [
@@ -60,7 +60,7 @@ def test_subtract_parametrized(a, b, expected):
 )
 def test_multiply_parametrized(a, b, expected):
     assert calculator.multiply(a, b) == expected
-#test multiply_wrong
+
 @pytest.mark.parametrize(
     "a, b, expected",
     [
@@ -73,7 +73,6 @@ def test_multiply_parametrized(a, b, expected):
 def test_multiply_wrong_parametrized(a, b, expected):
     assert calculator.multiply_wrong(a, b) == expected
 
-#test divide
 @pytest.mark.parametrize(
     "a, b, expected",
     [
@@ -85,7 +84,6 @@ def test_multiply_wrong_parametrized(a, b, expected):
 )
 def test_divide_parametrized(a, b, expected):
     assert calculator.divide(a, b) == expected
-
 
 
 
