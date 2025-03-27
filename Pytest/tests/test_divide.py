@@ -2,6 +2,7 @@ from src import calculator
 import pytest
 
 
+
 def test_devide():
     with pytest.raises(ValueError) as exc:
         calculator.divide(5, 0)
